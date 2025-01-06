@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 """
+This code will generate Figure 3. Lines 14–585 handle data processing, while line 585 onward covers scenario testing.
+
+Please adjust the working directory as needed.
+
+For additional information, you can contact yulin.yan@outlook.com.
 Created on Tue Aug 20 18:43:12 2024
 
 @author: Yulin
 """
+
 
 import seaborn as sns
 from sklearn.metrics import mean_squared_error, r2_score
