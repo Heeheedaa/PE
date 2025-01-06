@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 """
+This code will generate Figure 1. Lines 14–585 handle data processing, while line 585 onward covers scenario testing: climate only, plant traits only, and all factors combined.
+
+Please adjust the working directory as needed.
+
+For additional information, you can contact yulin.yan@outlook.com.
+
 Created on Mon May 27 14:55:13 2024
 
 @author: Yulin
