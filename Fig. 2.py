@@ -370,7 +370,6 @@ def calculate_Vcmax25(row):
     c = np.sqrt(1-(4 * 0.103 /m)**(2./3))
     c = np.real(c)
     m_ = m * c
-    A = Phi * row['PPFD_mean'] * row['FPAR_mean'] * m_    # [gC m-2 d-1] 
 
     # modified Arrhenius function for Vcmax (Bernacchi et al. 2001)
     Arrhenius = np.exp(72 * (Ta - 298.15) / (R * Ta * 298.15)) * (1 + np.exp(((668 - 1.07*Ta)/1000 * 298.15 - 200) / (R * 298.15))) / (
@@ -591,7 +590,6 @@ results_df = pd.DataFrame(columns=['Scenarios', 'RMSE', 'R2', 'Bias','Slope','MA
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -677,7 +675,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -761,7 +758,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -846,7 +842,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -932,7 +927,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -1017,7 +1011,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -1103,7 +1096,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -1188,7 +1180,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -1271,7 +1262,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
@@ -1354,7 +1344,6 @@ print(f"XGBoost Average R-squared: {average_r2}")
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
