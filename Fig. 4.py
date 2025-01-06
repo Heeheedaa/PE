@@ -583,7 +583,6 @@ merged_df = merged_df[~merged_df['site_name'].isin(c4_sites)]
 # Import necessary libraries
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
 import numpy as np
 import seaborn as sns
