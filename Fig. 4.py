@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 """
+This code will generate Figure 4. Lines 14–585 handle data processing, while line 585 onward covers scenario testing.
+
+Please adjust the working directory as needed.
+
+For additional information, you can contact yulin.yan@outlook.com.
+
 Created on Sun Apr 14 13:54:45 2024
 
 @author: Yulin
