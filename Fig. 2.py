@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This code will generate Figure 1. Lines 14–585 handle data processing, while line 585 onward covers scenario testing.
+This code will generate Figure 2. Lines 14–585 handle data processing, while line 585 onward covers scenario testing.
 
 Please adjust the working directory as needed.
 
