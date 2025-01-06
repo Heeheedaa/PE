@@ -370,7 +370,6 @@ def calculate_Vcmax25(row):
     c = np.sqrt(1-(4 * 0.103 /m)**(2./3))
     c = np.real(c)
     m_ = m * c
-    A = Phi * row['PPFD_mean'] * row['FPAR_mean'] * m_    # [gC m-2 d-1] 
 
     # modified Arrhenius function for Vcmax (Bernacchi et al. 2001)
     Arrhenius = np.exp(72 * (Ta - 298.15) / (R * Ta * 298.15)) * (1 + np.exp(((668 - 1.07*Ta)/1000 * 298.15 - 200) / (R * 298.15))) / (
